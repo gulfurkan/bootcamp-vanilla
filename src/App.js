@@ -1,9 +1,9 @@
 import Table from "./components/Table";
-
+import data from './constants/data.js'
 const App = () => {
   return (
     <div className="App">
-      <Table/>
+      <Table data = {data}/>
     </div>
   );
 }

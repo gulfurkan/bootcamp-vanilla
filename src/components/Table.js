@@ -1,6 +1,5 @@
 import React from 'react'
-import data from '../constants/data.js'
-export default function Table() {
+export default function Table(props) {
     return (
         <div>
             <h2>Currencies</h2>
@@ -12,7 +11,7 @@ export default function Table() {
                     <th>Satış(TL)</th>
                     <th>Fark(%)</th>
                 </tr>
-                {data.currencies.map((item) => {
+                {props.data.currencies.map((item) => {
                     return (
                         <>
                             <tr>
