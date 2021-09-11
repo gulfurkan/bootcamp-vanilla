@@ -1,9 +1,10 @@
 import Table from "./components/Table";
 import data from './constants/data.js'
+import headers from './constants/headers.js'
 const App = () => {
   return (
     <div className="App">
-      <Table data = {data}/>
+      <Table data = {data} headers={headers}/>
     </div>
   );
 }
